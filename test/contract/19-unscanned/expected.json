@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [],
+  "unscanned": [
+    {
+      "file": "app/javascript/labels.js",
+      "reason": "JavaScript that names a catalog key isn't scanned",
+      "keys": ["users.title"]
+    },
+    { "file": "app/views/users/show.html.slim", "reason": "Slim isn't scanned" }
+  ],
+  "conventions": []
+}

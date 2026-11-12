@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/views/users/index.html.haml",
+      "lang": "haml",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 5,
+      "content": "t(\".title\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.index.title",
+      "lazy": { "base": "users.index", "from": "view" },
+      "spans": [{ "start": 3, "end": 9, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "app/views/users/index.html.haml",
+      "lang": "haml",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 29,
+      "content": "t(\"users.new\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.new",
+      "spans": [{ "start": 3, "end": 12, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

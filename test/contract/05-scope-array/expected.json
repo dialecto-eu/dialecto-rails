@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/models/user.rb",
+      "lang": "ruby",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 47,
+      "content": "I18n.t(:title, scope: [:users, :index",
+      "form": "I18n.t",
+      "origin": "i18n",
+      "fn": "label",
+      "key": "users.index.title",
+      "scope": [{ "span": 1 }, { "span": 2 }],
+      "spans": [
+        { "start": 8, "end": 13, "delim": ":", "role": "key", "lang": "ruby" },
+        { "start": 24, "end": 29, "delim": ":", "role": "scope", "lang": "ruby" },
+        { "start": 32, "end": 37, "delim": ":", "role": "scope", "lang": "ruby" }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "file": "app/models/user.rb",
+      "lang": "ruby",
+      "start_line": 7,
+      "end_line": 7,
+      "offset": 118,
+      "content": "I18n.t(:title, scope: [:admin",
+      "form": "I18n.t",
+      "origin": "i18n",
+      "fn": "section_label",
+      "pattern": "admin.*.title",
+      "parts": [{ "lit": "admin." }, { "wild": true }, { "lit": ".title" }],
+      "reason": "dynamic_scope",
+      "scope": [{ "span": 1 }, { "expr": "Current.section" }],
+      "spans": [
+        { "start": 8, "end": 13, "delim": ":", "role": "key", "lang": "ruby" },
+        { "start": 24, "end": 29, "delim": ":", "role": "scope", "lang": "ruby" }
+      ]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

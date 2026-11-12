@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/models/report.rb",
+      "lang": "ruby",
+      "start_line": 4,
+      "end_line": 4,
+      "offset": 38,
+      "content": "I18n.t(:title, scope: \"users.\"",
+      "form": "I18n.t",
+      "origin": "i18n",
+      "fn": "labels",
+      "key": "users.title",
+      "scope": [{ "span": 1 }],
+      "spans": [
+        { "start": 8, "end": 13, "delim": ":", "role": "key", "lang": "ruby" },
+        { "start": 23, "end": 29, "delim": "\"", "role": "scope", "lang": "ruby" }
+      ]
+    },
+    {
+      "kind": "static",
+      "file": "app/models/report.rb",
+      "lang": "ruby",
+      "start_line": 5,
+      "end_line": 5,
+      "offset": 77,
+      "content": "I18n.t(:name, scope: :\"users.admin\"",
+      "form": "I18n.t",
+      "origin": "i18n",
+      "fn": "labels",
+      "key": "users.admin.name",
+      "scope": [{ "span": 1 }],
+      "spans": [
+        { "start": 8, "end": 12, "delim": ":", "role": "key", "lang": "ruby" },
+        { "start": 23, "end": 34, "delim": ":\"", "role": "scope", "lang": "ruby" }
+      ]
+    },
+    {
+      "kind": "static",
+      "file": "app/models/report.rb",
+      "lang": "ruby",
+      "start_line": 6,
+      "end_line": 6,
+      "offset": 121,
+      "content": "I18n.t(:email, scope: [:users, \"admin.\"",
+      "form": "I18n.t",
+      "origin": "i18n",
+      "fn": "labels",
+      "key": "users.admin.email",
+      "scope": [{ "span": 1 }, { "span": 2 }],
+      "spans": [
+        { "start": 8, "end": 13, "delim": ":", "role": "key", "lang": "ruby" },
+        { "start": 24, "end": 29, "delim": ":", "role": "scope", "lang": "ruby" },
+        { "start": 32, "end": 38, "delim": "\"", "role": "scope", "lang": "ruby" }
+      ]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

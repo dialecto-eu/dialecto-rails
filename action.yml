@@ -1,0 +1,83 @@
+name: "Dialecto Rails scan"
+description: "Send a Rails project's config/locales files (and, when asked, where the code reads each key) to Dialecto."
+author: "Dialecto"
+
+branding:
+  icon: "upload-cloud"
+  color: "purple"
+
+inputs:
+  project:
+    description: "The project's number: the <number> in its Dialecto URL /repos/<number>."
+    required: true
+  token:
+    description: "The project's scan token, from a repository secret (Settings → Scan token in Dialecto)."
+    required: true
+  url:
+    description: "Your Dialecto's URL. Set it when you run Dialecto yourself."
+    required: false
+    default: "https://app.dialecto.eu"
+  catalog-paths:
+    description: "The project's translation file paths as on its Dialecto settings page, comma-separated."
+    required: false
+    default: "config/locales/**/*.yml,config/locales/**/*.yaml"
+  usages:
+    description: "Also send where the code reads each key (call-site anchors from Ruby and ERB files). Needed for key renames."
+    required: false
+    default: "false"
+  require-usages:
+    description: "Fail when the usage scan can't run, instead of sending the catalogs without it."
+    required: false
+    default: "false"
+  ruby-version:
+    description: "Ruby to install for the scan, independent of the app's own. Empty skips the install and uses the runner's Ruby (3.2 or newer)."
+    required: false
+    default: "3.4"
+  version:
+    description: "The dialecto-rails gem version to install."
+    required: false
+    default: "0.1.0"
+  working-directory:
+    description: "The repository root. Defaults to the workspace."
+    required: false
+    default: "."
+
+outputs:
+  scan-id:
+    description: "The scan's id in Dialecto."
+    value: ${{ steps.scan.outputs.scan-id }}
+  outcome:
+    description: "ingested, idempotent or skipped."
+    value: ${{ steps.scan.outputs.outcome }}
+  files:
+    description: "How many catalog files were sent."
+    value: ${{ steps.scan.outputs.files }}
+
+runs:
+  using: "composite"
+  steps:
+    - if: inputs.ruby-version != ''
+      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      with:
+        ruby-version: ${{ inputs.ruby-version }}
+    - name: Install dialecto-rails
+      shell: bash
+      env:
+        DIALECTO_GEM_VERSION: ${{ inputs.version }}
+      run: |
+        export GEM_HOME="$RUNNER_TEMP/dialecto-rails-gems"
+        gem install dialecto-rails -v "$DIALECTO_GEM_VERSION" --no-document
+        echo "GEM_HOME=$GEM_HOME" >> "$GITHUB_ENV"
+        echo "$GEM_HOME/bin" >> "$GITHUB_PATH"
+    - name: Scan
+      id: scan
+      shell: bash
+      working-directory: ${{ inputs.working-directory }}
+      env:
+        DIALECTO_SCAN_TOKEN: ${{ inputs.token }}
+        DIALECTO_PROJECT: ${{ inputs.project }}
+        DIALECTO_URL: ${{ inputs.url }}
+        DIALECTO_CATALOG_PATHS: ${{ inputs.catalog-paths }}
+        DIALECTO_USAGES: ${{ inputs.usages }}
+        DIALECTO_REQUIRE_USAGES: ${{ inputs.require-usages }}
+      run: dialecto-rails scan

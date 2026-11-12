@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "pattern",
+      "file": "app/helpers/users_helper.rb",
+      "lang": "ruby",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 37,
+      "content": "t(\".heading\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": "heading",
+      "pattern": "*.heading",
+      "parts": [{ "wild": true }, { "lit": ".heading" }],
+      "reason": "lazy_outside_view",
+      "lazy": { "from": "other" },
+      "spans": [{ "start": 3, "end": 11, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

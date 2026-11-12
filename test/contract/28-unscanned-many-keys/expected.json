@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [],
+  "unscanned": [
+    { "file": "app/javascript/all.js", "reason": "JavaScript that names a catalog key isn't scanned", "keys": "all" }
+  ],
+  "conventions": []
+}

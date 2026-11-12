@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/views/users/index.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 7,
+      "content": "t(\"users.title\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.title",
+      "spans": [{ "start": 3, "end": 14, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "app/views/users/index.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 33,
+      "content": "t(\"users.title\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.title",
+      "spans": [{ "start": 3, "end": 14, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

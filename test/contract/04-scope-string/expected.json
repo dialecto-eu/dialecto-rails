@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/helpers/users_helper.rb",
+      "lang": "ruby",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 40,
+      "content": "t(\"title\", scope: \"users.index\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": "page_title",
+      "key": "users.index.title",
+      "scope": [{ "span": 1 }],
+      "spans": [
+        { "start": 3, "end": 8, "delim": "\"", "role": "key", "lang": "ruby" },
+        { "start": 19, "end": 30, "delim": "\"", "role": "scope", "lang": "ruby" }
+      ]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

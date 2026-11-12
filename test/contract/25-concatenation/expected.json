@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "pattern",
+      "file": "app/views/settings/_level.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 10,
+      "content": "t(\"settings.edit.mfa.level.\" + level)",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "pattern": "settings.edit.mfa.level.*",
+      "parts": [{ "lit": "settings.edit.mfa.level." }, { "wild": true }],
+      "reason": "interpolation",
+      "spans": []
+    },
+    {
+      "kind": "pattern",
+      "file": "app/views/settings/_level.html.erb",
+      "lang": "erb",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 68,
+      "content": "t('settings.edit.mfa.' + kind.to_s)",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "pattern": "settings.edit.mfa.*",
+      "parts": [{ "lit": "settings.edit.mfa." }, { "wild": true }],
+      "reason": "interpolation",
+      "spans": []
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

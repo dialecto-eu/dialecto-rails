@@ -1,0 +1,28 @@
+{
+  "namespaces": [
+    { "prefix": "activerecord.", "reader": "Rails reads this key by its name, for model names, attributes and errors" },
+    { "prefix": "activemodel.", "reader": "Rails reads this key by its name, for model names, attributes and errors" },
+    { "prefix": "attributes.", "reader": "Rails reads this key by its name, for attribute names" },
+    { "prefix": "errors.", "reader": "Rails reads this key by its name, for validation messages" },
+    { "prefix": "helpers.", "reader": "Rails reads this key by its name, for form helpers" },
+    { "prefix": "date.", "reader": "Rails reads this key by its name, for dates" },
+    { "prefix": "time.", "reader": "Rails reads this key by its name, for times" },
+    { "prefix": "datetime.", "reader": "Rails reads this key by its name, for dates and times" },
+    { "prefix": "number.", "reader": "Rails reads this key by its name, for numbers" },
+    { "prefix": "support.", "reader": "Rails reads this key by its name, for lists and array formatting" },
+    { "prefix": "i18n.", "reader": "Rails reads this key by its name, for the i18n library" }
+  ],
+  "gems": {
+    "activeadmin": ["active_admin."],
+    "administrate": ["administrate."],
+    "devise": ["devise."],
+    "devise-i18n": ["devise."],
+    "doorkeeper": ["doorkeeper."],
+    "kaminari": ["views.", "helpers.page_entries_info."],
+    "pundit": ["pundit."],
+    "rails_admin": ["admin."],
+    "responders": ["flash."],
+    "simple_form": ["simple_form."],
+    "will_paginate": ["will_paginate."]
+  }
+}

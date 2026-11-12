@@ -1,0 +1,10 @@
+en:
+  settings:
+    edit:
+      mfa:
+        level:
+          disabled: Off
+          ui_only: Sign in
+        title: MFA
+  other:
+    key: Other

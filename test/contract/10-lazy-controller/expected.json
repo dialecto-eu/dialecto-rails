@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/controllers/admin/users_controller.rb",
+      "lang": "ruby",
+      "start_line": 6,
+      "end_line": 6,
+      "offset": 173,
+      "content": "t(\".created\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": "create",
+      "key": "admin.users.create.created",
+      "lazy": { "base": "admin.users.create", "from": "controller" },
+      "defaults": [{ "key": "admin.users.created" }],
+      "spans": [{ "start": 3, "end": 11, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "pattern",
+      "file": "app/controllers/admin/users_controller.rb",
+      "lang": "ruby",
+      "start_line": 12,
+      "end_line": 12,
+      "offset": 256,
+      "content": "t(\".created\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": "notify",
+      "pattern": "admin.users.*.created",
+      "parts": [{ "lit": "admin.users." }, { "wild": true }, { "lit": ".created" }],
+      "reason": "lazy_action_unknown",
+      "lazy": { "from": "controller" },
+      "defaults": [{ "key": "admin.users.created" }],
+      "spans": [{ "start": 3, "end": 11, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

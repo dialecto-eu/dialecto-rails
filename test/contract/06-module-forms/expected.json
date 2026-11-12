@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/views/reports/show.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 8,
+      "content": "translate(\"report.title\"",
+      "form": "translate",
+      "origin": "helper",
+      "fn": null,
+      "key": "report.title",
+      "spans": [{ "start": 11, "end": 23, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "lib/report.rb",
+      "lang": "ruby",
+      "start_line": 4,
+      "end_line": 4,
+      "offset": 44,
+      "content": "I18n.t(\"report.title\"",
+      "form": "I18n.t",
+      "origin": "i18n",
+      "fn": "self.labels",
+      "key": "report.title",
+      "spans": [{ "start": 8, "end": 20, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "lib/report.rb",
+      "lang": "ruby",
+      "start_line": 5,
+      "end_line": 5,
+      "offset": 74,
+      "content": "I18n.translate(\"report.subtitle\"",
+      "form": "I18n.translate",
+      "origin": "i18n",
+      "fn": "self.labels",
+      "key": "report.subtitle",
+      "spans": [{ "start": 16, "end": 31, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "lib/report.rb",
+      "lang": "ruby",
+      "start_line": 6,
+      "end_line": 6,
+      "offset": 115,
+      "content": "I18n.t!(\"report.total\"",
+      "form": "I18n.t!",
+      "origin": "i18n",
+      "fn": "self.labels",
+      "key": "report.total",
+      "spans": [{ "start": 9, "end": 21, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "lib/report.rb",
+      "lang": "ruby",
+      "start_line": 7,
+      "end_line": 7,
+      "offset": 146,
+      "content": "I18n.translate!(\"report.footer\"",
+      "form": "I18n.translate!",
+      "origin": "i18n",
+      "fn": "self.labels",
+      "key": "report.footer",
+      "spans": [{ "start": 17, "end": 30, "delim": "\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "lib/report.rb",
+      "lang": "ruby",
+      "start_line": 8,
+      "end_line": 8,
+      "offset": 186,
+      "content": "I18n.exists?(\"report.note\"",
+      "form": "I18n.exists?",
+      "origin": "i18n",
+      "fn": "self.labels",
+      "key": "report.note",
+      "spans": [{ "start": 14, "end": 25, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

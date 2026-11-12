@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "pattern",
+      "file": "app/views/users/_badge.html.erb",
+      "lang": "erb",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 27,
+      "content": "t(\"users.#{role}.title\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "pattern": "users.*.title",
+      "parts": [{ "lit": "users." }, { "wild": true }, { "lit": ".title" }],
+      "reason": "interpolation",
+      "spans": [
+        { "start": 3, "end": 9, "delim": "\"", "role": "key", "head": true, "closed": false, "lang": "ruby" }
+      ]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

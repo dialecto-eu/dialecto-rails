@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/mailers/user_mailer.rb",
+      "lang": "ruby",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 73,
+      "content": "t(\".greeting\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": "welcome",
+      "key": "user_mailer.welcome.greeting",
+      "lazy": { "base": "user_mailer.welcome", "from": "mailer" },
+      "defaults": [{ "key": "user_mailer.greeting" }],
+      "spans": [{ "start": 3, "end": 12, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": [
+    {
+      "key": "user_mailer.welcome.subject",
+      "reason": "mailer_subject",
+      "source": "UserMailer#welcome",
+      "file": "app/mailers/user_mailer.rb",
+      "line": 4
+    }
+  ]
+}

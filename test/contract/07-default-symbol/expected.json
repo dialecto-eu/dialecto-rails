@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/views/users/show.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 8,
+      "content": "t(:title, scope: :users, default: :heading",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.title",
+      "scope": [{ "span": 1 }],
+      "defaults": [{ "key": "users.heading", "span": 2 }],
+      "spans": [
+        { "start": 3, "end": 8, "delim": ":", "role": "key", "lang": "ruby" },
+        { "start": 18, "end": 23, "delim": ":", "role": "scope", "lang": "ruby" },
+        { "start": 35, "end": 42, "delim": ":", "role": "default", "lang": "ruby" }
+      ]
+    },
+    {
+      "kind": "static",
+      "file": "app/views/users/show.html.erb",
+      "lang": "erb",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 67,
+      "content": "t(:intro, scope: :users",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.intro",
+      "scope": [{ "span": 1 }],
+      "spans": [
+        { "start": 3, "end": 8, "delim": ":", "role": "key", "lang": "ruby" },
+        { "start": 18, "end": 23, "delim": ":", "role": "scope", "lang": "ruby" }
+      ]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

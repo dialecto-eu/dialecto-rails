@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "literal",
+      "file": "app/models/user.rb",
+      "lang": "ruby",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 45,
+      "content": "\"users.title\"",
+      "form": "literal",
+      "fn": null,
+      "key": "users.title",
+      "spans": [{ "start": 1, "end": 12, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

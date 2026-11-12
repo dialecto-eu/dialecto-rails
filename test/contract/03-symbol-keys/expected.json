@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/views/home/index.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 8,
+      "content": "t(:welcome",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "welcome",
+      "spans": [{ "start": 3, "end": 10, "delim": ":", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "app/views/home/index.html.erb",
+      "lang": "erb",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 35,
+      "content": "t(:\"users.title\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.title",
+      "spans": [{ "start": 4, "end": 15, "delim": ":\"", "role": "key", "lang": "ruby" }]
+    },
+    {
+      "kind": "static",
+      "file": "app/views/home/index.html.erb",
+      "lang": "erb",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 67,
+      "content": "t(:'users.name'",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.name",
+      "spans": [{ "start": 4, "end": 14, "delim": ":'", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

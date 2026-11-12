@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/views/users/index.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 8,
+      "content": "t(\".title\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.index.title",
+      "lazy": { "base": "users.index", "from": "view" },
+      "spans": [{ "start": 3, "end": 9, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

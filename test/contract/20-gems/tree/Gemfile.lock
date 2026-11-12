@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bcrypt (3.1.20)
+    devise (4.9.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      responders
+      warden (~> 1.2.3)
+    kaminari (1.2.2)
+    orm_adapter (0.5.0)
+    rack (3.1.7)
+    responders (3.1.1)
+    warden (1.2.9)
+      rack (>= 2.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  devise
+  kaminari
+
+BUNDLED WITH
+   2.5.16

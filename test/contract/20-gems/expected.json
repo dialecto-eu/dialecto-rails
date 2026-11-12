@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "gems": [
+    { "name": "bcrypt", "version": "3.1.20" },
+    { "name": "devise", "version": "4.9.4" },
+    { "name": "kaminari", "version": "1.2.2" },
+    { "name": "orm_adapter", "version": "0.5.0" },
+    { "name": "rack", "version": "3.1.7" },
+    { "name": "responders", "version": "3.1.1" },
+    { "name": "warden", "version": "1.2.9" }
+  ],
+  "usages": [],
+  "unscanned": [],
+  "conventions": []
+}

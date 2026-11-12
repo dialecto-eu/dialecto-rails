@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "set",
+      "file": "app/views/posts/index.html.erb",
+      "lang": "erb",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 53,
+      "content": "t(\"posts.status.#{status}\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "keys": ["posts.status.draft", "posts.status.published"],
+      "pattern": "posts.status.*",
+      "parts": [{ "lit": "posts.status." }, { "wild": true }],
+      "spans": [
+        { "start": 3, "end": 16, "delim": "\"", "role": "key", "head": true, "closed": false, "lang": "ruby" }
+      ]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

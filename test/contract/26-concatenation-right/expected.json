@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "pattern",
+      "file": "app/views/settings/_level.html.erb",
+      "lang": "erb",
+      "start_line": 1,
+      "end_line": 1,
+      "offset": 10,
+      "content": "t(level + \".title\")",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "pattern": "*",
+      "parts": [{ "wild": true }],
+      "reason": "method_call",
+      "spans": []
+    },
+    {
+      "kind": "pattern",
+      "file": "app/views/settings/_level.html.erb",
+      "lang": "erb",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 50,
+      "content": "t([group, \"title\"].join(\".\"))",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "pattern": "*",
+      "parts": [{ "wild": true }],
+      "reason": "method_call",
+      "spans": []
+    },
+    {
+      "kind": "pattern",
+      "file": "app/views/settings/_level.html.erb",
+      "lang": "erb",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 100,
+      "content": "t(\"settings.%s.title\" % level)",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "pattern": "*",
+      "parts": [{ "wild": true }],
+      "reason": "method_call",
+      "spans": []
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

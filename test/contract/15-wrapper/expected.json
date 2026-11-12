@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "template",
+      "file": "app/helpers/nav_helper.rb",
+      "lang": "ruby",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 43,
+      "content": "\"nav.",
+      "form": "t",
+      "origin": "helper",
+      "fn": "nav_label",
+      "id": "app/helpers/nav_helper.rb@43",
+      "pattern": "nav.*.label",
+      "parts": [{ "lit": "nav." }, { "wild": true }, { "lit": ".label" }],
+      "spans": [
+        { "start": 1, "end": 5, "delim": "\"", "role": "key", "head": true, "closed": false, "lang": "ruby" }
+      ]
+    },
+    {
+      "kind": "set",
+      "file": "app/views/layouts/_nav.html.erb",
+      "lang": "erb",
+      "start_line": 2,
+      "end_line": 2,
+      "offset": 20,
+      "content": "nav_label(\"home\"",
+      "form": "nav_label",
+      "origin": "wrapper",
+      "fn": null,
+      "keys": ["nav.home.label"],
+      "pattern": "nav.home.label",
+      "parts": [{ "lit": "nav.home.label" }],
+      "via": ["app/helpers/nav_helper.rb@43"],
+      "spans": []
+    },
+    {
+      "kind": "set",
+      "file": "app/views/layouts/_nav.html.erb",
+      "lang": "erb",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 66,
+      "content": "nav_label(:about",
+      "form": "nav_label",
+      "origin": "wrapper",
+      "fn": null,
+      "keys": ["nav.about.label"],
+      "pattern": "nav.about.label",
+      "parts": [{ "lit": "nav.about.label" }],
+      "via": ["app/helpers/nav_helper.rb@43"],
+      "spans": []
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}

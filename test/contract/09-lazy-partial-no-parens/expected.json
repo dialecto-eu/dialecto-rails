@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "gems": [],
+  "usages": [
+    {
+      "kind": "static",
+      "file": "app/views/users/_row.html.erb",
+      "lang": "erb",
+      "start_line": 3,
+      "end_line": 3,
+      "offset": 51,
+      "content": "t \".edit\"",
+      "form": "t",
+      "origin": "helper",
+      "fn": null,
+      "key": "users.row.edit",
+      "lazy": { "base": "users.row", "from": "partial" },
+      "spans": [{ "start": 3, "end": 8, "delim": "\"", "role": "key", "lang": "ruby" }]
+    }
+  ],
+  "unscanned": [],
+  "conventions": []
+}
